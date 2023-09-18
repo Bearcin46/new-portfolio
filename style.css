@@ -23,14 +23,15 @@ a {
 
 }
 header{
-    background-color:transparent;
-    padding:20px;
+    background-color:var(--dark-primary);
+    padding:25px;
     color:#FFF;
     display:flex;
     justify-content: space-around;
     position: fixed;
     top:0;
     width:100%;
+    z-index: 99;
 }
 
 .header .logo{
@@ -52,7 +53,7 @@ header >div  > ul >li {
     list-style-type: none;
     margin-right: 20px;
 }
-.header > ul > li> a:hover{
+.header > ul :hover{
     color:var(--primary)
 }
 .name{
@@ -79,6 +80,9 @@ header >div  > ul >li {
 }
 .hero-section__desc{
     color:#c4c4c4;
+    font-size: 16px;
+    text-wrap: wrap;
+    word-spacing: 5px;
 }
 
 .intro {
@@ -134,7 +138,8 @@ header >div  > ul >li {
     
 }
 .btn-primary:hover{
-    background-color: #b1fc03;
+    background: linear-gradient(to right, #ba8b02, #181818);
+    color: aliceblue;
     font-weight: 600;
 }
 .btn-darkprimary{
@@ -153,7 +158,9 @@ header >div  > ul >li {
 /*about section*/
 
 .about__section{
-    background-color: #22282f;
+    background-color: #310e68;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     color:white;
     padding:60px;
     display:flex;
@@ -189,7 +196,7 @@ header >div  > ul >li {
     color:white;
 }
 .about__section__desc >h4 >  span{
-    color:var(--hover)
+    color:var(--primary)
 }
 .about__section__desc > ul > li > a{
     color:aqua;
@@ -198,10 +205,10 @@ header >div  > ul >li {
 /*work*/
 .work__section{
     color:white;
-    background:linear-gradient(to right, rgb(145, 75, 145), rgb(60, 16, 83));
+    background-image:linear-gradient(75deg,rgba(158, 100, 225, 0.85),rgba(0,0,0,0.85));
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;;
+    padding-bottom: 40px;
 }
 .work__section h4{
     font-weight: 900;
@@ -229,6 +236,11 @@ header >div  > ul >li {
     background-color: #22282f;
     border: 2px solid var(--primary);
     box-shadow: 5px 10px 10px var(--primary);
+    transition: 1s;
+    cursor: pointer;
+}
+.work__section__box:hover{
+    transform:scale(1.1) !important;
 }
 .work__section__box__desc >p{
     font-size: 20px;
@@ -255,7 +267,8 @@ header >div  > ul >li {
 }
 /*contact section*/
 .contact__section{
-    background-color: #14171c;
+    background-color: #310e68;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     padding: 48px;
     text-align: center;
 
@@ -316,13 +329,14 @@ footer{
         flex-direction: row;
         justify-content: space-between;
     }
-    .header__list > ul{
+    .header__list{
+        display: none;
+    }
+    .nav__list{
         flex-direction: column;
         padding:40px 0px 0 0;
-        right:0;
         text-align: center ;
-        gap:1rem;
-        display:none;
+        gap:1rem;   
         
     }
     header{
@@ -345,16 +359,16 @@ footer{
         flex-wrap: wrap;
     }
     .hero-section > div >img{
-        /* border-radius: 50%;
+        border-radius: 50%;
         width:200px;
         height:200px;
         background-color: var(--primary);
         margin-top: 50px;
-         */
-         display:none;
+        
+         /* display:none; */
     }
     .hero-section__title{
-        font-size: 42px;
+        font-size: 32px;
         font-weight: 900;
     
     }
@@ -375,7 +389,7 @@ footer{
         flex-direction: column;
     }
     .about__section > img{
-        width:calc(100% - 3);
+        width:300px;
     }
     section .about__section{
         flex-direction: column;
@@ -391,7 +405,12 @@ footer{
         margin-bottom: 20px;
     }
     .work__section{
-        padding:0 ;
+        padding-top:1.5rem ;
+    }
+    .work__sections{
+        flex-direction: column;
+        padding-top:1rem;
+        padding-bottom: 1rem;
     }
     .work__section__box{
         width:100%;
@@ -401,5 +420,6 @@ footer{
     .contact__section > form > input,
     .contact__section > form > input{
         width:100%;
+        text-align: center;
     }
 }

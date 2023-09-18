@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bearcin Portfolio</title>
-
+    <link rel="icon" href="./images/download.jpeg" type="image/x-icon"/>
+    <!--aos plugin-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--boxicons-->
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -20,16 +22,17 @@
                 BEARCIN SWEETY
             </span></a>
         </div>
+                <!--navlist-->
         <div class="header__list">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
+            <ul class="nav__list">
+                <li class="nav_items">
+                    <a href="./index.html" class="nav_link">Home</a>
                 </li>
-                <li>
-                    <a href="./about.html">About</a>
+                <li class="nav_items">
+                    <a href="#about" class="nav_link">About</a>
                 </li>
-                <li>
-                    <a href="./contact.html">Contact</a>
+                <li class="nav_items">
+                    <a href="#contact" class="nav_link">Contact</a>
                 </li>
             </ul>
             
@@ -38,17 +41,17 @@
             <button class="btn-darkprimary">Download Cv</button>
         </div>
 
-        <div class="toggle__menu">
+        <div class="toggle__menu" id="nav__toggle">
             <i class='bx bx-menu'></i>
         </div>
     </header>
-
+                        <!--hero section-->
     <main>
         <section class="hero-section">
             <div class="hero-section__topic">
                 <h4 class="intro">Hi <span>&#128075;</span></h4>
                 <h2 class="hero-section__title">I'm <span class="name">Bearcin Sweety</span></h2>
-                <p class="hero-section__desc">As a Full Stack developer,I'm responsible for creating user-friendly and interactive web pages or applications using programming languages like HTML, CSS, JavaScript, Reactjs, MongoDb and Nodejs. I love to work with design and technology to provide a good user experience and I collaborate with back-end developers who handle server-side logic and integration</p>
+                <p class="hero-section__desc">As a Full Stack developer,I'm responsible for creating user-friendly and interactive web pages or applications using programming languages like HTML, CSS, JavaScript, Reactjs, MongoDb and Nodejs. I love to work with design and technology to provide a good user experience.</p>
                 <div class="social-icons">
                     <ul>
                         <li><a href=""> </a> <i class='bx bxl-facebook-circle'></i> </li>
@@ -66,12 +69,17 @@
             </div>
         </section>
         <!--about-->
-        <section class="about__section">
-            <img src="./images/newone.png" alt="portfolio" width="450">
+        <section class="about__section" id="about">
 
-           <div class="about__section__desc">
+            <img src="./images/newone.png" alt="portfolio" width="450" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
+
+           <div class="about__section__desc" data-aos="fade-right"
+           data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
             
-            <h4>Iam a <span>FullStack Engineer</span> </h4>
+            <h4>I'm a <span>FullStack Engineer</span> </h4>
                 <ul>
                     <li>
                         <strong>Experience : </strong> 3 months
@@ -95,10 +103,10 @@
 
         <!--my works-->
         <section class="work__section">
-            <h4>MY WORKS</h4>
+            <h4>WHAT I DO</h4>
                 <div class="work__sections">
                     <!--workbox 1-->
-                    <div class="work__section__box">
+                    <div class="work__section__box" data-aos="flip-left" >
                             <!--icon here-->
                         <div class="work__section__box__icon">
                                 <i class='bx bxl-sketch'></i>
@@ -113,7 +121,7 @@
                         </div>
                     </div>
                     <!--workbox 2-->
-                    <div class="work__section__box">
+                    <div class="work__section__box" data-aos="flip-left">
                         <!--icon here-->
                         <div class="work__section__box__icon">
                             <i class='bx bx-code-alt'></i>
@@ -128,7 +136,7 @@
                         </div>
                     </div>
                     <!--workbox 3-->
-                    <div class="work__section__box">
+                    <div class="work__section__box" data-aos="flip-left">
                         <!--icon here-->
                         <div class="work__section__box__icon">
                             <i class='bx bx-laptop'></i>
@@ -147,9 +155,10 @@
                     
                 </div>
         </section >
-        <section class="contact__section">
+        <section class="contact__section" id="contact">
         <h4>CONTACT ME</h4>
-        <form action="">
+        <form action="" data-aos="fade-up"
+        data-aos-duration="1000">
             <div class="form__input">
                 <input type="text" placeholder="Enter your Name" name="name">
             </div>
@@ -170,5 +179,12 @@
             <h4>Copyright &copy; 2023 Bearcin Sweety - <a href="github"> All rights reserved</a></h4>
         </footer>
     </main>
+
+    <!--script tags-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
 </body>
 </html>
