@@ -1,6 +1,9 @@
 
-
-const navBtn=document.getElementById("nav__toggle")
-navBtn.addEventListener("click",()=>{
-    navBtn.classList.toggle("nav__list")
-})
+function myFunction() {
+    var x = document.getElementById("header__list");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
