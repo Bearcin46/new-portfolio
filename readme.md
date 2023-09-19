@@ -15,7 +15,7 @@
 ## Description
 [This project explains the designing and developing of a portfolio with our main frontend tools like HTML and CSS]
 ## Demo
-[Demo Video](./images/portfolio.gif)
+[Demo Video](./images/video.mp4)
 ## Internship
 This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.com/cyberdudenetworks) as part of the 6-Month Free Internship program, a skill development initiative organized to enhance participants' skills. Mentoring was provided by [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky). For more information, [you can contact CyberDude Networks here](https://cyberdudenetworks.com).
 ## Technologies Used 
