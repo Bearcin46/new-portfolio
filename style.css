@@ -198,8 +198,8 @@ header >div  > ul >li {
 .about__section__desc >h4 >  span{
     color:var(--primary)
 }
-.about__section__desc > ul > li > a{
-    color:aqua;
+.about__section__desc > ul > li > a:hover{
+    color:var(--primary);
 }
 
 /*work*/
